@@ -1,0 +1,7 @@
+name: Rate Limit
+type: module
+description: Implements rate limiting for API endpoints.
+package: Custom
+core_version_requirement: ^8 || ^9 || ^10
+dependencies:
+  - drupal:rest
