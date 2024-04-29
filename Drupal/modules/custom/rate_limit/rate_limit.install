@@ -1,17 +1,6 @@
 <?php
 
 /**
- * Implements hook_install().
- */
-function rate_limit_install() {
-  // Set default values for configs.
-  \Drupal::configFactory()->getEditable('rate_limit.settings')
-    ->set('count_limit', 5)
-    ->set('time_limit', 30) // In seconds.
-    ->save();
-}
-
-/**
  * Implements hook_schema().
  */
 function rate_limit_schema() {
