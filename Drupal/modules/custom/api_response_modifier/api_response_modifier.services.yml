@@ -1,0 +1,6 @@
+services:
+  api_response_mod.response_subscriber:
+    class: Drupal\api_response_modifier\EventSubscriber\ApiResponseSubscriber
+    arguments: ['@logger.factory']
+    tags:
+      - { name: event_subscriber }
