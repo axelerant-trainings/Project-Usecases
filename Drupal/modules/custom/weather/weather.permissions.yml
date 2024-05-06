@@ -1,0 +1,4 @@
+administer weather settings:
+  title: 'Administer Weather Settings'
+  description: 'Access to set the Weather API settings'
+  restrict access: true

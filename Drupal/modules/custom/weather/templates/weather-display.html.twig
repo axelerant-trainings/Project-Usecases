@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Theme implementation to display weather report over a block.
+ *
+ * Available variables:
+ * - weather_data: weather data received from thirtd party.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="weather-widget">
+	<p id="location" style="font-weight: bold;">{{ weather_data.location }}</p>
+	<div style="display: flex; align-items: center;">
+		<img id="weather-icon" src="{{ weather_data.weather_condition_icon }}" alt="{{ weather_data.weather_condition_text }}" title="{{ weather_data.weather_condition_text }}">
+		<span id="temperature">{{ '@temperature°C'|t({'@temperature': weather_data.temperature}) }}</span>
+		<em id="feels-like" style="font-size: 14px; padding-left: 5px;">{{ 'Feels like @feels°C'|t({'@feels': weather_data.feels_like}) }}</em>
+	</div>
+	<div class="wind-precipitation-wrapper">
+		<p id="wind-speed">{{ 'Wind: @wind km/h'|t({'@wind': weather_data.wind}) }}</p>
+    <p id="precipitation">{{ 'Precipitation: @precipitation mm'|t({'@precipitation': weather_data.precipitation}) }}</p>
+	</div>
+</div>

@@ -1,0 +1,7 @@
+name: 'Weather'
+description: 'Integrates third-party Weather API'
+type: module
+package: Custom
+core_version_requirement: ^10
+
+configure: weather.settings

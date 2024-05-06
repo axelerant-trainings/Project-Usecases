@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Contains hooks implementations.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function weather_theme() {
+    return [
+      'weather_display' => [
+        'variables' => [
+            'weather_data' => NULL,
+        ],
+      ],
+    ];
+}
