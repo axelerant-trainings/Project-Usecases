@@ -39,14 +39,8 @@ class WeatherDisplay extends BlockBase implements ContainerFactoryPluginInterfac
    * @param \Drupal\weather\Services\Weather $weather
    *   The weather service.
    */
-  public function __construct(
-    array $configuration,
-    $plugin_id,
-    $plugin_definition,
-    Weather $weather,
-  ) {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, Weather $weather) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
-
     $this->weather = $weather;
   }
 

@@ -68,7 +68,6 @@ class Weather {
         'query' => [
           'key' => $weather_settings->get('api_key'),
           'q' => $city,
-          'units' => 'metric',
         ],
       ]);
 
