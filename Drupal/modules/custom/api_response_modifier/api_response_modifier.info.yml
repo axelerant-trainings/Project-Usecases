@@ -1,0 +1,5 @@
+name: 'API Response Modifier'
+type: module
+description: 'Alters JSON:API response to include custom messages for delete operations.'
+package: Custom
+core_version_requirement: ^10
